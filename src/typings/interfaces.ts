@@ -1,10 +1,18 @@
 export type Room = "red" | "blue"
 
+export interface currentUser {
+  name: string
+  _id: string
+  socketId: string
+
+}
+
 export interface User {
   username: string
   id: string
-  room: Room
+  socketId: string
 }
+
 
 export interface Message {
   text: string
